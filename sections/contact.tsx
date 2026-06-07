@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
-import { MessageCircle, Phone, MapPin, Loader2, CheckCircle2, Send } from "lucide-react";
+import { MessageCircle, Phone, MapPin, Loader2, CheckCircle2, Send, Clock } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { HudFrame } from "@/components/ui/hud-frame";
 import { Button } from "@/components/ui/button";
@@ -49,9 +49,9 @@ export function Contact() {
 
       <div className="container-edge relative">
         <SectionHeading
-          eyebrow="Initiate Contact // Book"
-          title="Reserve Your Bay"
-          description="Book a consultation or send your vehicle details. Our preservation engineers respond within hours."
+          eyebrow="Get In Touch // Visit Us"
+          title="Visit Our Studio in Patna"
+          description="Book a free inspection or WhatsApp your car photos for an instant estimate. We respond within hours — in Hindi or English."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_1.1fr]">
@@ -89,6 +89,17 @@ export function Contact() {
               </div>
             </div>
 
+            <div className="panel flex items-start gap-3 p-4">
+              <Clock className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+              <div className="text-sm leading-relaxed text-muted">
+                <span className="font-display font-bold text-white">Studio Timings</span>
+                <br />
+                {siteConfig.hours.days} · 10:00 AM – 8:00 PM
+                <br />
+                <span className="text-highlight">Pickup &amp; drop in Patna · Hindi &amp; English support</span>
+              </div>
+            </div>
+
             <div className="panel relative min-h-[220px] flex-1 overflow-hidden p-1.5">
               <HudFrame />
               <iframe
@@ -113,7 +124,7 @@ export function Contact() {
                 <CheckCircle2 className="h-12 w-12 text-highlight" />
                 <h3 className="font-display text-2xl font-bold text-white">Appointment Requested</h3>
                 <p className="max-w-sm text-sm text-muted">
-                  We&apos;ve received your details. A preservation engineer will confirm your booking shortly.
+                  We&apos;ve received your details. Our team will confirm your free inspection shortly — on WhatsApp or by phone.
                 </p>
               </motion.div>
             ) : (

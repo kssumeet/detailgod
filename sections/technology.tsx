@@ -25,9 +25,9 @@ export function Technology() {
       <div className="pointer-events-none absolute inset-0 bg-accent-radial opacity-40" />
       <div className="container-edge relative">
         <SectionHeading
-          eyebrow="R&D // Material Science"
-          title="The Technology"
-          description="Our protection systems are built on advanced material science — engineered, measured and validated, never improvised."
+          eyebrow="Technology // Built for India"
+          title="Technology Built For Indian Conditions"
+          description="Every protection system we use is engineered for the realities of Indian roads and weather — harsh sun, monsoon, dust and hard water."
         />
 
         <motion.div

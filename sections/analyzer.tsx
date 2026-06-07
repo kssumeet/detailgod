@@ -78,10 +78,10 @@ export function Analyzer() {
       <div className="pointer-events-none absolute inset-0 bg-accent-radial opacity-50" />
       <div className="container-edge relative">
         <SectionHeading
-          eyebrow="AI Module // Surface Estimator"
-          title="AI Vehicle Analyzer"
+          eyebrow="Free Report // Paint Health"
+          title="Get A Free Paint Health Report"
           align="center"
-          description="Upload a photo of your vehicle. Our estimator returns an instant surface report and the protection program engineered for it."
+          description="Upload a photo of your car and get an instant paint-condition assessment, a recommended service and an approximate estimate — plus a WhatsApp consultation with our detailing experts."
         />
 
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 lg:grid-cols-2">
@@ -196,7 +196,7 @@ export function Analyzer() {
                 <CheckCircle2 className="h-12 w-12 text-highlight" />
                 <h3 className="font-display text-xl font-bold text-white">Report Locked In</h3>
                 <p className="max-w-xs text-sm text-muted">
-                  Our preservation team will reach out shortly with your full surface report and a tailored quote.
+                  Our detailing experts will reach out shortly on WhatsApp with your full paint report and a tailored quote.
                 </p>
               </motion.div>
             ) : (
@@ -228,7 +228,7 @@ export function Analyzer() {
                 </Field>
 
                 <Button type="submit" size="lg" variant="primary" className="mt-auto w-full" disabled={isSubmitting}>
-                  {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : "Get My Protection Report"}
+                  {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : "Get Free Report"}
                 </Button>
               </form>
             )}

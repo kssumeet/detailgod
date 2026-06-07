@@ -11,11 +11,11 @@ import type { ServiceModule } from "@/types";
 export const services: ServiceModule[] = [
   {
     id: "ppf",
-    index: "MODULE 01",
-    title: "Paint Protection Film",
-    tagline: "Self-healing armor",
+    index: "SERVICE 01",
+    title: "Paint Protection Film (PPF)",
+    tagline: "Self-healing protection for Indian roads",
     description:
-      "Aerospace-grade thermoplastic urethane film that absorbs rock chips, swirls and road debris while healing micro-scratches under heat.",
+      "Genuine branded, self-healing film that absorbs stone chips from highways, parking scratches and key marks. Light scratches reflow and vanish in the afternoon sun — and it comes with a manufacturer warranty card.",
     icon: ShieldCheck,
     metrics: [
       { label: "Thickness", value: "200µm" },
@@ -25,11 +25,11 @@ export const services: ServiceModule[] = [
   },
   {
     id: "ceramic",
-    index: "MODULE 02",
-    title: "Ceramic Shield Technology",
-    tagline: "Nano-glass bonding",
+    index: "SERVICE 02",
+    title: "Ceramic Coating",
+    tagline: "Deep gloss, half the washing",
     description:
-      "A SiO₂ nano-ceramic lattice chemically bonds to the clear coat, delivering extreme hydrophobicity, depth of gloss and chemical resistance.",
+      "A 9H+ nano-ceramic layer bonds to your clear coat so monsoon water sheets straight off, dust wipes away and bird droppings won't etch the paint. Enhances gloss and cuts your washing effort in half.",
     icon: Sparkles,
     metrics: [
       { label: "Hardness", value: "9H+" },
@@ -39,11 +39,11 @@ export const services: ServiceModule[] = [
   },
   {
     id: "graphene",
-    index: "MODULE 03",
-    title: "Graphene Protection",
-    tagline: "Anti-static carbon lattice",
+    index: "SERVICE 03",
+    title: "Graphene Coating",
+    tagline: "Built for the Indian summer",
     description:
-      "Graphene-infused coating reduces water spotting and surface temperature while extending durability far beyond conventional ceramics.",
+      "Graphene keeps panels cooler under the 45°C sun and drastically reduces hard-water spotting — the No.1 paint problem in Indian cities. Superior gloss and durability well beyond conventional ceramics.",
     icon: Atom,
     metrics: [
       { label: "Durability", value: "7 yr" },
@@ -53,11 +53,11 @@ export const services: ServiceModule[] = [
   },
   {
     id: "detailing",
-    index: "MODULE 04",
+    index: "SERVICE 04",
     title: "Premium Detailing",
-    tagline: "Interior & exterior care",
+    tagline: "Showroom condition, inside & out",
     description:
-      "Multi-stage paint correction, deep interior extraction and surface decontamination — restoring true factory clarity inside and out under calibrated lighting.",
+      "Multi-stage paint correction plus deep interior care — AC-vent dust extraction, seat stain removal and leather conditioning. We bring tired daily-driven cars back to showroom condition.",
     icon: SprayCan,
     metrics: [
       { label: "Stages", value: "Up to 4" },
@@ -67,11 +67,11 @@ export const services: ServiceModule[] = [
   },
   {
     id: "restoration",
-    index: "MODULE 05",
+    index: "SERVICE 05",
     title: "Vehicle Restoration",
-    tagline: "Bring it back to life",
+    tagline: "Old Gypsy? Faded Scorpio? Bring it in.",
     description:
-      "Complete restoration of tired and damaged vehicles — paint, trim, leather and surface rebuild to factory-fresh or better-than-new condition.",
+      "Complete rebuild for aging or neglected vehicles — faded paint revival, trim restoration and interior reconditioning to a factory-fresh, OEM+ finish that turns heads again.",
     icon: Wrench,
     metrics: [
       { label: "Scope", value: "Full" },
@@ -81,11 +81,11 @@ export const services: ServiceModule[] = [
   },
   {
     id: "painting",
-    index: "MODULE 06",
+    index: "SERVICE 06",
     title: "Custom Painting",
-    tagline: "Refinish & repaint",
+    tagline: "Dent-paint done right",
     description:
-      "Professional repaints, colour changes and panel refinishing in a controlled booth — flawless coverage, perfect colour match and a durable finish.",
+      "Computerised colour matching and panel refinishing in a dust-free booth — no patchy panels, no overspray, no colour mismatch. Professional repaints and colour changes that actually last.",
     icon: Paintbrush,
     metrics: [
       { label: "Match", value: "Exact" },

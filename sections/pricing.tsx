@@ -20,10 +20,10 @@ export function Pricing() {
     <section id="programs" className="relative py-24 md:py-32">
       <div className="container-edge">
         <SectionHeading
-          eyebrow="Investment // Tiers"
+          eyebrow="Pricing // Protection Programs"
           title="Protection Programs"
           align="center"
-          description="Engineered protection packages for every level of commitment — from essential preservation to concours-grade total care."
+          description="Transparent packages for every kind of car owner in Patna. Genuine branded products, manufacturer warranty card, GST invoice and EMI options on every plan."
         />
 
         <motion.div
@@ -46,7 +46,7 @@ export function Pricing() {
               >
                 {p.featured && (
                   <span className="absolute right-4 top-4 rounded-full bg-highlight px-2.5 py-1 font-mono text-[8px] uppercase tracking-[0.15em] text-background">
-                    Most Chosen
+                    Most Popular
                   </span>
                 )}
                 <div

@@ -18,9 +18,9 @@ export function Services() {
     <section id="modules" className="relative py-24 md:py-32">
       <div className="container-edge">
         <SectionHeading
-          eyebrow="Capabilities // 06 Systems"
-          title="Automotive Enhancement Modules"
-          description="Each service is engineered as a discrete protection module — deployed individually or stacked into a complete preservation system."
+          eyebrow="Our Services // 06 Protection Systems"
+          title="Our Services"
+          description="Each service can be chosen on its own or combined into a complete protection package tailored to your car and how you drive it in Patna."
         />
 
         <motion.div

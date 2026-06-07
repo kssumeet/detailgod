@@ -32,7 +32,7 @@ export default function OpengraphImage() {
             display: "flex",
           }}
         >
-          Automotive Preservation · India
+          Premium Car Care Studio · Patna, Bihar
         </div>
         <div style={{ display: "flex", fontSize: 96, fontWeight: 800, marginTop: 20, lineHeight: 1 }}>
           DETAIL GOD <span style={{ color: "#00D4FF", marginLeft: 16 }}>INDIA</span>
@@ -50,7 +50,7 @@ export default function OpengraphImage() {
             letterSpacing: 4,
           }}
         >
-          PPF · CERAMIC · GRAPHENE · CORRECTION
+          PPF · CERAMIC · GRAPHENE · DETAILING · PAINTING
         </div>
       </div>
     ),

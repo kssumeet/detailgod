@@ -23,8 +23,8 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-              Automotive preservation specialists. Advanced paint protection, ceramic engineering and
-              vehicle enhancement designed for perfection.
+              Premium car care studio in Patna, Bihar. PPF, ceramic &amp; graphene coating, detailing,
+              restoration and custom painting — engineered for Indian roads.
             </p>
             <div className="mt-5 flex gap-2">
               <Social href={siteConfig.instagram} label="Instagram">

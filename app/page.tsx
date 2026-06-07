@@ -20,6 +20,7 @@ const Process = dynamic(() => import("@/sections/process").then((m) => m.Process
 const Analyzer = dynamic(() => import("@/sections/analyzer").then((m) => m.Analyzer));
 const Pricing = dynamic(() => import("@/sections/pricing").then((m) => m.Pricing));
 const Contact = dynamic(() => import("@/sections/contact").then((m) => m.Contact));
+const FAQ = dynamic(() => import("@/sections/faq").then((m) => m.FAQ));
 const Footer = dynamic(() => import("@/sections/footer").then((m) => m.Footer));
 
 export default function Home() {
@@ -43,6 +44,7 @@ export default function Home() {
         <Analyzer />
         <Pricing />
         <Contact />
+        <FAQ />
       </main>
       <Footer />
     </>

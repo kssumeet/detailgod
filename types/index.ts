@@ -39,7 +39,7 @@ export interface MissionLog {
   missionId: string;
   vehicle: string;
   treatment: string;
-  status: "SUCCESS";
+  status: "COMPLETED";
   client: string;
   city: string;
   rating: number;
@@ -67,9 +67,9 @@ export interface GalleryItem {
 }
 
 export type GalleryCategory =
-  | "Luxury Cars"
-  | "Sports Cars"
+  | "Luxury"
   | "SUVs"
+  | "Sedans & Hatchbacks"
   | "Ceramic Projects"
   | "PPF Projects"
   | "Interior Projects";

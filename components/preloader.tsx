@@ -5,11 +5,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { siteConfig } from "@/config/site";
 
 const MESSAGES = [
-  "INITIALIZING DETAIL GOD SYSTEM",
-  "SCANNING SURFACE DATA",
-  "LOADING PROTECTION MODULES",
-  "CALIBRATING EXPERIENCE",
-  "SYSTEM READY",
+  "WELCOME TO DETAIL GOD INDIA",
+  "PREMIUM CAR CARE STUDIO",
+  "PATNA · BIHAR",
+  "PREPARING YOUR EXPERIENCE",
+  "READY",
 ];
 
 export function Preloader() {

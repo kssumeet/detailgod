@@ -14,9 +14,9 @@ export function Process() {
     <section className="relative py-24 md:py-32">
       <div className="container-edge">
         <SectionHeading
-          eyebrow="Workflow // 06 Phases"
-          title="Protection Protocol"
-          description="A disciplined, repeatable process. No shortcuts — every vehicle moves through the same six validated phases."
+          eyebrow="Process // How We Work"
+          title="How We Work"
+          description="A clear, no-shortcuts process. Every car moves through the same six steps — and you see the inspection report before paying anything."
         />
 
         <div ref={ref} className="relative mt-16 pl-8 md:pl-0">

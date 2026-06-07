@@ -26,9 +26,9 @@ export function Scanner() {
     <section id="scanner" className="relative overflow-hidden py-24 md:py-32">
       <div className="container-edge">
         <SectionHeading
-          eyebrow="Diagnostics // Surface Intelligence"
-          title="Digital Vehicle Scanner"
-          description="Every vehicle begins with a full-surface scan. Our diagnostic system maps paint condition the way a Tesla reads its own systems — in real time, down to the micron."
+          eyebrow="Free Inspection // Paint Health"
+          title="Free Paint Health Check-Up"
+          description="Every vehicle entering our studio gets a complete paint inspection under professional lighting — paint depth, swirl marks, scratches, oxidation and hard-water spots. You see the full report before you pay anything."
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-[1.2fr_1fr]">

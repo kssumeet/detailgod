@@ -25,9 +25,9 @@ export function Gallery() {
     <section id="gallery" className="relative py-24 md:py-32">
       <div className="container-edge">
         <SectionHeading
-          eyebrow="Portfolio // Field Results"
-          title="Vehicle Gallery"
-          description="A selection of vehicles preserved by Detail God India — from daily luxury to concours showpieces."
+          eyebrow="Our Work // Recent Projects"
+          title="Our Work"
+          description="A selection of cars protected by Detail God India — from Thars and Fortuners to BMWs and Defenders, right here in Patna."
         />
 
         {/* Filters */}

@@ -12,9 +12,9 @@ export function Testimonials() {
     <section className="relative overflow-hidden py-24 md:py-32">
       <div className="container-edge">
         <SectionHeading
-          eyebrow="Verified Results // Field Logs"
-          title="Client Success Logs"
-          description="Every project is logged, validated and signed off. These are real missions from our protection archive."
+          eyebrow="Reviews // Client Stories"
+          title="What Our Clients Say"
+          description="Real reviews from car owners across Patna and Bihar. Every project is documented, checked and signed off before delivery."
         />
 
         <motion.div
@@ -34,7 +34,7 @@ export function Testimonials() {
 
               <div className="flex items-center justify-between border-b border-border pb-3">
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
-                  MISSION ID <span className="text-white">{log.missionId}</span>
+                  PROJECT <span className="text-white">#{log.missionId}</span>
                 </span>
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-highlight/30 bg-highlight/10 px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.15em] text-highlight">
                   <CheckCircle2 className="h-3 w-3" /> {log.status}
