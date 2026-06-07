@@ -74,6 +74,23 @@ export type GalleryCategory =
   | "PPF Projects"
   | "Interior Projects";
 
+export interface ServiceDetail {
+  id: string;
+  slug: string;
+  name: string;
+  metaTitle: string;
+  metaDescription: string;
+  heroEyebrow: string;
+  heroTitle: string;
+  heroIntro: string;
+  heroImageId: string;
+  priceFrom: string;
+  benefits: { title: string; desc: string }[];
+  whyIndia: string[];
+  faqs: { q: string; a: string }[];
+  related: string[];
+}
+
 export interface LeadPayload {
   name: string;
   phone: string;

@@ -49,14 +49,14 @@ export const siteConfig = {
 } as const;
 
 export const navLinks = [
-  { label: "Paint Check", href: "#scanner" },
-  { label: "Services", href: "#modules" },
-  { label: "Technology", href: "#technology" },
-  { label: "Our Work", href: "#gallery" },
-  { label: "Pricing", href: "#programs" },
-  { label: "Free Report", href: "#analyzer" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Paint Check", href: "/#scanner" },
+  { label: "Services", href: "/#modules" },
+  { label: "Technology", href: "/#technology" },
+  { label: "Our Work", href: "/#gallery" },
+  { label: "Pricing", href: "/#programs" },
+  { label: "Free Report", href: "/#analyzer" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/#contact" },
 ] as const;
 
 export const whatsappLink = (msg = "Hello Detail God India, I'd like to book a free inspection.") =>

@@ -33,7 +33,7 @@ export function Navbar() {
         )}
       >
         <nav className="container-edge flex h-16 items-center justify-between md:h-20">
-          <a href="#top" className="group flex items-center gap-2.5">
+          <a href="/" className="group flex items-center gap-2.5">
             <span className="relative flex h-7 w-7 items-center justify-center">
               <span className="absolute inset-0 rounded-md border border-accent/50" />
               <span className="absolute inset-0 animate-pulse-ring rounded-md border border-accent/40" />

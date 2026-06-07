@@ -3,6 +3,7 @@
 import { Instagram, MessageCircle, MapPin, ArrowUpRight } from "lucide-react";
 import { siteConfig, navLinks, whatsappLink } from "@/config/site";
 import { services } from "@/config/services";
+import { slugForServiceId } from "@/config/service-pages";
 
 export function Footer() {
   const year = 2026;
@@ -39,7 +40,7 @@ export function Footer() {
           {/* Services */}
           <FooterCol title="Services">
             {services.map((s) => (
-              <FooterLink key={s.id} href="#modules">
+              <FooterLink key={s.id} href={slugForServiceId(s.id) ? `/${slugForServiceId(s.id)}` : "/#modules"}>
                 {s.title}
               </FooterLink>
             ))}

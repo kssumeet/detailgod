@@ -3,22 +3,31 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Plus } from "lucide-react";
-import { faqs } from "@/config/content";
+import { faqs as defaultFaqs } from "@/config/content";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { fadeUp, inViewOnce, stagger } from "@/animations/variants";
 import { cn } from "@/lib/utils";
 
-export function FAQ() {
+interface FAQProps {
+  items?: { q: string; a: string }[];
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+}
+
+export function FAQ({
+  items = defaultFaqs,
+  eyebrow = "FAQ // Common Questions",
+  title = "Frequently Asked Questions",
+  description = "Everything car owners in Patna ask us about PPF, ceramic coating, pricing and care. Still unsure? WhatsApp us — we reply in Hindi or English.",
+}: FAQProps = {}) {
   const [open, setOpen] = useState<number | null>(0);
+  const faqs = items;
 
   return (
     <section id="faq" className="relative py-24 md:py-32">
       <div className="container-edge">
-        <SectionHeading
-          eyebrow="FAQ // Common Questions"
-          title="Frequently Asked Questions"
-          description="Everything car owners in Patna ask us about PPF, ceramic coating, pricing and care. Still unsure? WhatsApp us — we reply in Hindi or English."
-        />
+        <SectionHeading eyebrow={eyebrow} title={title} description={description} />
 
         <motion.div
           variants={stagger(0.06)}

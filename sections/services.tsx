@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { services } from "@/config/services";
+import { slugForServiceId } from "@/config/service-pages";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { fadeUp, inViewOnce, stagger } from "@/animations/variants";
 import { cn } from "@/lib/utils";
@@ -58,16 +60,30 @@ export function Services() {
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted">{s.description}</p>
 
-              <div className="mt-6 flex gap-6 border-t border-border pt-4">
-                {s.metrics.map((m) => (
-                  <div key={m.label}>
-                    <div className="font-mono text-base font-bold text-white">{m.value}</div>
-                    <div className="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">
-                      {m.label}
+              <div className="mt-6 flex items-end justify-between gap-6 border-t border-border pt-4">
+                <div className="flex gap-6">
+                  {s.metrics.map((m) => (
+                    <div key={m.label}>
+                      <div className="font-mono text-base font-bold text-white">{m.value}</div>
+                      <div className="font-mono text-[9px] uppercase tracking-[0.18em] text-muted">
+                        {m.label}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+                <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-accent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  View details
+                </span>
               </div>
+
+              {/* Stretched link to the dedicated service page */}
+              {slugForServiceId(s.id) && (
+                <Link
+                  href={`/${slugForServiceId(s.id)}`}
+                  className="absolute inset-0 z-10"
+                  aria-label={`${s.title} — view details`}
+                />
+              )}
             </motion.article>
           ))}
         </motion.div>

@@ -108,16 +108,17 @@ const img = (id: string, w = 800) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=70`;
 
 // TODO: Replace the placeholder Unsplash `src` URLs below with real
-// Detail God India studio photos of each vehicle. Titles/alt text are final.
+// Detail God India studio photos. Images are curated to Indian-market
+// vehicles (Thar, Fortuner, Creta, XUV700, Jimny, Defender) until then.
 export const galleryItems: GalleryItem[] = [
-  { id: "g1", title: "Mahindra Thar — Full Body PPF", category: "PPF Projects", src: img("1503376780353-7e6692767b70"), span: "tall" },
-  { id: "g2", title: "Toyota Fortuner Legender — Graphene Coating", category: "SUVs", src: img("1552519507-da3b142c6e3d"), span: "wide" },
-  { id: "g3", title: "BMW X5 — Ceramic Elite", category: "Ceramic Projects", src: img("1605559424843-9e4c228bf1c2"), span: "normal" },
-  { id: "g4", title: "Hyundai Creta — Ceramic + Interior Detailing", category: "Interior Projects", src: img("1503736334956-4c8f8e92946d"), span: "normal" },
-  { id: "g5", title: "Land Rover Defender — Titanium Protection", category: "Luxury", src: img("1519641471654-76ce0107ad1b"), span: "tall" },
-  { id: "g6", title: "Mercedes-Benz GLE — Full Front PPF", category: "Luxury", src: img("1492144534655-ae79c964c9d7"), span: "normal" },
-  { id: "g7", title: "Mahindra XUV700 — Paint Correction + Ceramic", category: "SUVs", src: img("1583121274602-3e2820c69888"), span: "wide" },
-  { id: "g8", title: "Maruti Jimny — Matte PPF Wrap", category: "PPF Projects", src: img("1494976388531-d1058494cdd8"), span: "normal" },
+  { id: "g1", title: "Mahindra Thar — Full Body PPF", category: "PPF Projects", src: img("1710225358761-4f5891df657d"), span: "tall" },
+  { id: "g2", title: "Toyota Fortuner Legender — Graphene Coating", category: "SUVs", src: img("1664783856972-ac9922d7b2d3"), span: "wide" },
+  { id: "g3", title: "BMW X5 — Ceramic Elite", category: "Ceramic Projects", src: img("1635089917414-6da790da8479"), span: "normal" },
+  { id: "g4", title: "Hyundai Creta — Ceramic + Interior Detailing", category: "Interior Projects", src: img("1588036873025-7261a5647adf"), span: "normal" },
+  { id: "g5", title: "Land Rover Defender — Titanium Protection", category: "Luxury", src: img("1730830812273-12c0a8a98092"), span: "tall" },
+  { id: "g6", title: "Mercedes-Benz GLE — Full Front PPF", category: "Luxury", src: img("1634636208509-63bcd2a1b13f"), span: "normal" },
+  { id: "g7", title: "Mahindra XUV700 — Paint Correction + Ceramic", category: "SUVs", src: img("1651751168317-d1c3f16d300d"), span: "wide" },
+  { id: "g8", title: "Maruti Jimny — Matte PPF Wrap", category: "PPF Projects", src: img("1624464823981-ae6ef2c9a469"), span: "normal" },
 ];
 
 export const galleryCategories = [

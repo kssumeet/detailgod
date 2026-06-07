@@ -1,6 +1,7 @@
 import { siteConfig } from "@/config/site";
 import { faqs, missionLogs } from "@/config/content";
 import { services } from "@/config/services";
+import type { ServiceDetail } from "@/types";
 
 export function localBusinessSchema() {
   return {
@@ -69,14 +70,55 @@ export function serviceSchema() {
   }));
 }
 
-export function faqSchema() {
+export function faqSchema(items: { q: string; a: string }[] = faqs) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
+    mainEntity: items.map((f) => ({
       "@type": "Question",
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
   };
+}
+
+/** Service + BreadcrumbList schema for a dedicated service landing page. */
+export function serviceDetailSchema(detail: ServiceDetail) {
+  const url = `${siteConfig.url}/${detail.slug}`;
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": `${url}/#service`,
+      name: detail.name,
+      description: detail.metaDescription,
+      serviceType: detail.heroTitle,
+      url,
+      areaServed: siteConfig.areaServed.map((name) => ({ "@type": "City", name })),
+      provider: {
+        "@type": "AutoDetailing",
+        name: siteConfig.name,
+        telephone: siteConfig.phone,
+        url: siteConfig.url,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: siteConfig.address.street,
+          addressLocality: siteConfig.address.locality,
+          addressRegion: siteConfig.address.region,
+          postalCode: siteConfig.address.postalCode,
+          addressCountry: siteConfig.address.country,
+        },
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+        { "@type": "ListItem", position: 2, name: "Services", item: `${siteConfig.url}/#modules` },
+        { "@type": "ListItem", position: 3, name: detail.heroTitle, item: url },
+      ],
+    },
+    faqSchema(detail.faqs),
+  ];
 }
