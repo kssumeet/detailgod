@@ -2,9 +2,9 @@ import {
   ShieldCheck,
   Sparkles,
   Atom,
-  Wand2,
-  Armchair,
-  Cog,
+  SprayCan,
+  Wrench,
+  Paintbrush,
 } from "lucide-react";
 import type { ServiceModule } from "@/types";
 
@@ -52,13 +52,13 @@ export const services: ServiceModule[] = [
     accent: "accent",
   },
   {
-    id: "correction",
+    id: "detailing",
     index: "MODULE 04",
-    title: "Paint Correction",
-    tagline: "Optical resurfacing",
+    title: "Premium Detailing",
+    tagline: "Interior & exterior care",
     description:
-      "Multi-stage machine refinement removes swirl marks, oxidation and holograms, restoring true factory clarity measured under calibrated lighting.",
-    icon: Wand2,
+      "Multi-stage paint correction, deep interior extraction and surface decontamination — restoring true factory clarity inside and out under calibrated lighting.",
+    icon: SprayCan,
     metrics: [
       { label: "Stages", value: "Up to 4" },
       { label: "Gloss +", value: "+38%" },
@@ -66,30 +66,30 @@ export const services: ServiceModule[] = [
     accent: "warning",
   },
   {
-    id: "interior",
+    id: "restoration",
     index: "MODULE 05",
-    title: "Interior Restoration",
-    tagline: "Cabin preservation",
+    title: "Vehicle Restoration",
+    tagline: "Bring it back to life",
     description:
-      "Deep extraction, leather reconditioning and antimicrobial treatment restore and protect every surface of the cabin environment.",
-    icon: Armchair,
+      "Complete restoration of tired and damaged vehicles — paint, trim, leather and surface rebuild to factory-fresh or better-than-new condition.",
+    icon: Wrench,
     metrics: [
-      { label: "Surfaces", value: "Full" },
-      { label: "Protection", value: "UV+" },
+      { label: "Scope", value: "Full" },
+      { label: "Finish", value: "OEM+" },
     ],
     accent: "highlight",
   },
   {
-    id: "engine",
+    id: "painting",
     index: "MODULE 06",
-    title: "Engine Bay Enhancement",
-    tagline: "Thermal-safe detailing",
+    title: "Custom Painting",
+    tagline: "Refinish & repaint",
     description:
-      "Controlled decontamination and dressing of the engine bay for a concours-level presentation without compromising electronics.",
-    icon: Cog,
+      "Professional repaints, colour changes and panel refinishing in a controlled booth — flawless coverage, perfect colour match and a durable finish.",
+    icon: Paintbrush,
     metrics: [
-      { label: "Method", value: "Low-pressure" },
-      { label: "Finish", value: "Satin" },
+      { label: "Match", value: "Exact" },
+      { label: "Booth", value: "Dust-free" },
     ],
     accent: "accent",
   },

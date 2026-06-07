@@ -63,8 +63,8 @@ export function Hero() {
           </motion.p>
 
           <motion.p variants={fadeUp} className="mt-3 max-w-lg text-sm leading-relaxed text-muted sm:text-base">
-            Advanced paint protection, ceramic engineering and vehicle enhancement designed for
-            perfection. We are not a detailing center — we are automotive perfection engineers.
+            A place where technology, people and car care converge. PPF, ceramic &amp; graphene
+            coating, detailing, restoration and painting in Patna — engineered for perfection.
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-9 flex flex-wrap items-center gap-3">

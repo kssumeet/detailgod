@@ -25,7 +25,10 @@ export function Contact() {
     setSubmitted(true);
   };
 
-  const mapSrc = `https://maps.google.com/maps?q=${siteConfig.geo.lat},${siteConfig.geo.lng}&z=12&output=embed`;
+  const mapQuery = encodeURIComponent(
+    `${siteConfig.name}, ${siteConfig.address.street}, ${siteConfig.address.locality}, ${siteConfig.address.region} ${siteConfig.address.postalCode}`
+  );
+  const mapSrc = `https://maps.google.com/maps?q=${mapQuery}&z=15&output=embed`;
 
   return (
     <section id="contact" className="relative overflow-hidden py-24 md:py-32">
@@ -77,10 +80,12 @@ export function Contact() {
 
             <div className="panel flex items-start gap-3 p-4">
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-              <div className="text-sm text-muted">
+              <div className="text-sm leading-relaxed text-muted">
                 <span className="font-display font-bold text-white">{siteConfig.name}</span>
                 <br />
-                {siteConfig.address.locality}, {siteConfig.address.region}, {siteConfig.address.country}
+                {siteConfig.address.street},
+                <br />
+                {siteConfig.address.locality}, {siteConfig.address.region} {siteConfig.address.postalCode}
               </div>
             </div>
 
